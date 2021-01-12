@@ -18,7 +18,7 @@ public class UserService {
 
     public ResponseEntity<HttpStatus> createUser(UserDto userDto) {
         if (userRepository.findByUsername(userDto.getUsername()) != null) {
-            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         userRepository.save(userMapper.toEntity(userDto));
         return new ResponseEntity<>(HttpStatus.OK);
