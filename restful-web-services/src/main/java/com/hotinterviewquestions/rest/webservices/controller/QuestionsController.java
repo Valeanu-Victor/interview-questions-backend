@@ -34,10 +34,9 @@ public class QuestionsController {
         return new ResponseEntity<>(questions, HttpStatus.OK);
     }
 
-    @GetMapping("/interview-questions/aa")
+    @GetMapping("/interview-questions/all")
     public ResponseEntity<Set<Question>> getAll() {
-        Set<Question> questions = new HashSet<>();
-        questions = questionsService.getAll();
+        Set<Question> questions = questionsService.getAll();
 
         return new ResponseEntity<>(questions, HttpStatus.OK);
     }

@@ -63,7 +63,8 @@ public class JWTWebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                     .and()
                 .authorizeRequests()
-                    .antMatchers("/login", "/register", "/interview-questions/selected", "/admin/all").permitAll()
+                    .antMatchers("/login", "/register", "/interview-questions/selected",
+                            "/admin/all", "/favicon.ico", "/interview-questions/all").permitAll()
                     .anyRequest().authenticated();
 
         httpSecurity.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
