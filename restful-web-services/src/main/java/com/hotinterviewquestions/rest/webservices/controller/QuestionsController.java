@@ -20,7 +20,7 @@ public class QuestionsController {
     private QuestionsService questionsService;
 
     @PostMapping(
-            value = "/interview-questions/all",
+            value = "/interview-questions/selected",
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
     )
     public ResponseEntity<Set<Question>> retrieveAll(@RequestBody UserSelectionsView userSelectionsView) {
