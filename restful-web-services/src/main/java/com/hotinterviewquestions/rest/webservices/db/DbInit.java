@@ -37,13 +37,11 @@ public class DbInit implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        UserDto victor = new UserDto("victor", passwordEncoder.encode("dan123"), 1, "", "");
+        UserDto victor = new UserDto("victor@test.com", passwordEncoder.encode("victor123"), 1, "", "");
         UserDto admin = new UserDto("admin", passwordEncoder.encode("admin123"), 1, "", "");
-        UserDto manager = new UserDto("manager", passwordEncoder.encode("manager123"), 1, "", "");
 
         User victorEntity = userMapper.toEntity(victor);
         User adminEntity = userMapper.toEntity(admin);
-        User managerEntity = userMapper.toEntity(manager);
 
         QuestionDto question1 = new QuestionDto("question", "answer", "Junior", "Docker");
         QuestionDto question2 = new QuestionDto("question2", "answer2", "Intermediate", "Java8Features");
@@ -58,7 +56,7 @@ public class DbInit implements CommandLineRunner {
         questions.add(questionEntity2);
         questions.add(questionEntity3);
 
-        List<User> users = Arrays.asList(victorEntity, adminEntity, managerEntity);
+        List<User> users = Arrays.asList(victorEntity, adminEntity);
 
         this.questionsJpaRepository.saveAll(questions);
         this.userRepository.saveAll(users);
