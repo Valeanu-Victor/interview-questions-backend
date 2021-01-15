@@ -43,9 +43,9 @@ public class DbInit implements CommandLineRunner {
         User victorEntity = userMapper.toEntity(victor);
         User adminEntity = userMapper.toEntity(admin);
 
-        QuestionDto question1 = new QuestionDto("question", "answer", "Junior", "Docker");
-        QuestionDto question2 = new QuestionDto("question2", "answer2", "Intermediate", "Java8Features");
-        QuestionDto question3 = new QuestionDto("question3", "answer3", "Advanced", "Angular2");
+        QuestionDto question1 = new QuestionDto("What is Docker?", "Docker is an open-source lightweight containerization technology. It has gained widespread popularity in the cloud and application packaging world. It allows you to automate the deployment of applications in lightweight and portable containers.", "Junior", "Docker");
+        QuestionDto question2 = new QuestionDto("What is Docker Engine?", "Docker daemon or Docker engine represents the server. The docker daemon and the clients should be run on the same or remote host, which can communicate through command-line client binary and full RESTful API.", "Intermediate", "Docker");
+        QuestionDto question3 = new QuestionDto("What command should you run to see all running container in Docker?", "$ docker ps", "Junior", "Docker");
 
         Question questionEntity1 = questionMapper.toEntity(question1);
         Question questionEntity2 = questionMapper.toEntity(question2);
