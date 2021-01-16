@@ -63,7 +63,7 @@ public class JWTWebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                     .and()
                 .authorizeRequests()
-                    .antMatchers("/login", "/register", "/interview-questions/selected",
+                    .antMatchers("/authenticate", "/register", "/interview-questions/selected",
                             "/admin/all", "/favicon.ico", "/interview-questions/all",
                             "/propose-question/proposed", "/propose-question/all").permitAll()
                     .anyRequest().authenticated();
