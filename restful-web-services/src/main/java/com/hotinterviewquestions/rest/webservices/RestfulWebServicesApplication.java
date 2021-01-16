@@ -19,7 +19,9 @@ public class RestfulWebServicesApplication {
 		return new WebMvcConfigurerAdapter() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("https://angular-hotinterviewquestions.herokuapp.com");
+				registry.addMapping("/**").allowedOrigins(
+						"https://angular-hotinterviewquestions.herokuapp.com",
+						"http://angular-hotinterviewquestions.herokuapp.com");
 			}
 		};
 	}
