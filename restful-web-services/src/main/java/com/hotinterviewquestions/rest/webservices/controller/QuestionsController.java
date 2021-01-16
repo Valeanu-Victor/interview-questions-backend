@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Set;
 
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="https://angular-hotinterviewquestions.herokuapp.com")
 @RestController
 public class QuestionsController {
 

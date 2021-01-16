@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins="https://angular-hotinterviewquestions.herokuapp.com")
 public class UserController {
     @Autowired
     private UserService userService;
