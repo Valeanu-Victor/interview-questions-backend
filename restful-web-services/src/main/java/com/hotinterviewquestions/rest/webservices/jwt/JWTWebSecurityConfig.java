@@ -54,6 +54,8 @@ public class JWTWebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
+                .cors()
+                    .disable()
                 .csrf()
                     .disable()
                 .exceptionHandling()
