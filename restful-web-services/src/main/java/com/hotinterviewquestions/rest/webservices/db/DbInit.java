@@ -37,6 +37,10 @@ public class DbInit implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+
+        userRepository.deleteAll();
+        questionsJpaRepository.deleteAll();
+
         UserDto victor = new UserDto("victor@test.com", passwordEncoder.encode("victor123"), 1, "", "");
         UserDto admin = new UserDto("admin", passwordEncoder.encode("admin123"), 1, "", "");
 
