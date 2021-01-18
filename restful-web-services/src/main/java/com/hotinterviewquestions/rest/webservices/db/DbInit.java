@@ -42,7 +42,7 @@ public class DbInit implements CommandLineRunner {
         questionsJpaRepository.deleteAll();
 
         UserDto victor = new UserDto("victor@test.com", passwordEncoder.encode("victor123"), 1, "", "");
-        UserDto admin = new UserDto("admin", passwordEncoder.encode("admin123"), 1, "", "");
+        UserDto admin = new UserDto("admin", passwordEncoder.encode("admin123"), 1, "ADMIN", "");
 
         User victorEntity = userMapper.toEntity(victor);
         User adminEntity = userMapper.toEntity(admin);
