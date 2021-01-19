@@ -62,9 +62,9 @@ public class DbInit implements CommandLineRunner {
         QuestionDto question9 = new QuestionDto("Is delete, next, main, exit or null keyword in java?", "NO", "Junior", "JavaCore");
         QuestionDto question10 = new QuestionDto("What are the various access specifiers in Java?", "In Java, access specifiers are the keywords which are used to define the access scope of the method, class, or a variable. In Java, there are four access specifiers given below.\n" +
                 "\n" +
-                "Public\n" + "The classes, methods, or variables which are defined as public, can be accessed by any class or method.\n" +
-                "Protected\n" + "Protected can be accessed by the class of the same package, or by the sub-class of this class, or within the same class.\n" +
-                "Default\n" + "Default are accessible within the package only. By default, all the classes, methods, and variables are of default scope.\n" +
+                "Public\n" + "The classes, methods, or variables which are defined as public, can be accessed by any class or method.\n\n" +
+                "Protected\n" + "Protected can be accessed by the class of the same package, or by the sub-class of this class, or within the same class.\n\n" +
+                "Default\n" + "Default are accessible within the package only. By default, all the classes, methods, and variables are of default scope.\n\n" +
                 "Private\n" + "The private class, methods, or variables defined as private can be accessed within the class only.", "Junior", "JavaCore");
         QuestionDto question11 = new QuestionDto("What new features were added in Java 8?", "Java 8 ships with several new features but the most significant are the following:\n" +
                 "\n" +
