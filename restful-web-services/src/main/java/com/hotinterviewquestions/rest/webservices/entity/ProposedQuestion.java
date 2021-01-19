@@ -1,9 +1,6 @@
 package com.hotinterviewquestions.rest.webservices.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "proposed_questions")
@@ -13,8 +10,12 @@ public class ProposedQuestion {
     @GeneratedValue
     private Long id;
 
+    @Column(name = "question", columnDefinition="text")
     private String question;
+
+    @Column(name = "answer", columnDefinition="text")
     private String answer;
+
     private String difficulty;
     private String category;
 
