@@ -10,10 +10,10 @@ public class Question {
     @GeneratedValue
     private Long id;
 
-    @Column(name = "question", columnDefinition="text", length = 10485760)
+    @Column(name = "question", columnDefinition="text")
     private String question;
 
-    @Column(name = "answer", columnDefinition="text", length = 10485760)
+    @Column(name = "answer", columnDefinition="text")
     private String answer;
 
     @Column(name = "difficulty")

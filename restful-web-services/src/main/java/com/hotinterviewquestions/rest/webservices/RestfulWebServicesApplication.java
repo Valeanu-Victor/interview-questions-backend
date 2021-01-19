@@ -21,7 +21,8 @@ public class RestfulWebServicesApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**").allowedOrigins(
 						"https://angular-hotinterviewquestions.herokuapp.com",
-						"http://angular-hotinterviewquestions.herokuapp.com");
+						"http://angular-hotinterviewquestions.herokuapp.com",
+						"http://localhost:4200");
 			}
 		};
 	}

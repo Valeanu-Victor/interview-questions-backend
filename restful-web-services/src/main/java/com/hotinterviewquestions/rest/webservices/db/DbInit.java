@@ -62,20 +62,20 @@ public class DbInit implements CommandLineRunner {
         QuestionDto question9 = new QuestionDto("Is delete, next, main, exit or null keyword in java?", "NO", "Junior", "JavaCore");
         QuestionDto question10 = new QuestionDto("What are the various access specifiers in Java?", "In Java, access specifiers are the keywords which are used to define the access scope of the method, class, or a variable. In Java, there are four access specifiers given below.\n" +
                 "\n" +
-                "Public The classes, methods, or variables which are defined as public, can be accessed by any class or method.\n" +
-                "Protected Protected can be accessed by the class of the same package, or by the sub-class of this class, or within the same class.\n" +
-                "Default Default are accessible within the package only. By default, all the classes, methods, and variables are of default scope.\n" +
-                "Private The private class, methods, or variables defined as private can be accessed within the class only.", "Junior", "JavaCore");
+                "Public\n" + "The classes, methods, or variables which are defined as public, can be accessed by any class or method.\n" +
+                "Protected\n" + "Protected can be accessed by the class of the same package, or by the sub-class of this class, or within the same class.\n" +
+                "Default\n" + "Default are accessible within the package only. By default, all the classes, methods, and variables are of default scope.\n" +
+                "Private\n" + "The private class, methods, or variables defined as private can be accessed within the class only.", "Junior", "JavaCore");
         QuestionDto question11 = new QuestionDto("What new features were added in Java 8?", "Java 8 ships with several new features but the most significant are the following:\n" +
                 "\n" +
-                "Lambda Expressions − a new language feature allowing treating actions as objects\n" +
-                "Method References − enable defining Lambda Expressions by referring to methods directly using their names\n" +
-                "Optional − special wrapper class used for expressing optionality\n" +
-                "Functional Interface – an interface with maximum one abstract method, implementation can be provided using a Lambda Expression\n" +
-                "Default methods − give us the ability to add full implementations in interfaces besides abstract methods\n" +
-                "Nashorn, JavaScript Engine − Java-based engine for executing and evaluating JavaScript code\n" +
-                "Stream API − a special iterator class that allows processing collections of objects in a functional manner\n" +
-                "Date API − an improved, immutable JodaTime-inspired Date API\n" +
+                "Lambda Expressions − a new language feature allowing treating actions as objects.\n\n" +
+                "Method References − enable defining Lambda Expressions by referring to methods directly using their names.\n\n" +
+                "Optional − special wrapper class used for expressing optionality.\n\n" +
+                "Functional Interface – an interface with maximum one abstract method, implementation can be provided using a Lambda Expression.\n\n" +
+                "Default methods − give us the ability to add full implementations in interfaces besides abstract methods.\n\n" +
+                "Nashorn, JavaScript Engine − Java-based engine for executing and evaluating JavaScript code.\n\n" +
+                "Stream API − a special iterator class that allows processing collections of objects in a functional manner.\n\n" +
+                "Date API − an improved, immutable JodaTime-inspired Date API.\n\n" +
                 "Along with these new features, lots of feature enhancements are done under-the-hood, at both compiler and JVM level.", "Junior", "Java8Features");
         QuestionDto question12 = new QuestionDto("What is the meaning of String::Valueof expression?", "It is a static method reference to the valueOf method of the String class.", "Junior", "Java8Features");
         QuestionDto question13 = new QuestionDto("Describe some of the Functional Interfaces in the Standard Library.", "There are a lot of functional interfaces in the java.util.function package, the more common ones include but not limited to:\n" +
@@ -118,7 +118,7 @@ public class DbInit implements CommandLineRunner {
                 "Docker Swarm is native clustering for Docker. It turns a pool of Docker hosts into a single, virtual Docker host. Docker Swarm serves the standard Docker API, any tool that already communicates with a Docker daemon can use Swarm to transparently scale to multiple hosts.", "Intermediate", "Docker");
         QuestionDto question24 = new QuestionDto("Once you’ve worked with an image, how do you push it to docker hub?", "$ docker push <username/image name>", "Advanced", "Docker");
         QuestionDto question25 = new QuestionDto("Will you lose your data, when a docker container exists?", "No, you won’t lose any data when Docker container exits. Any data that your application writes to the container gets preserved on the disk until you explicitly delete the container. The file system for the container persists even after the container halts.", "Advanced", "Docker");
-        QuestionDto question26 = new QuestionDto("Can I use JSON instead of YAML for my compose file in Docker?", "You can use JSON instead of YAML for your compose file, to use JSON file with compose, specify the JSON filename to use, for eg:\n" +
+        QuestionDto question26 = new QuestionDto("Can I use JSON instead of YAML for my compose file in Docker?", "You can use JSON instead of YAML for your compose file, to use JSON file with compose, specify the JSON filename to use, for example:\n" +
                 "\n" +
                 "$ docker-compose -f docker-compose.json up", "Advanced", "Docker");
 
